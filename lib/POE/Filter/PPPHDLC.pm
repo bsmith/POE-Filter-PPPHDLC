@@ -1,6 +1,6 @@
 package POE::Filter::PPPHDLC;
 
-use 5.006001;
+use 5.006002;
 use strict;
 use warnings;
 
@@ -12,7 +12,9 @@ sub HDLC_BUFFER () { 0 }
 
 sub new {
   my $class = shift;
-  return bless [''], $class;
+  return bless [
+    '', # HDLC_BUFFER
+  ], $class;
 }
 
 # only arg is an array ref of chunks
@@ -127,7 +129,6 @@ sub _frame_check {
 
 1;
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
