@@ -7,5 +7,5 @@ WriteMakefile(
     VERSION_FROM      => 'lib/POE/Filter/PPPHDLC.pm', # finds $VERSION
     PREREQ_PM         => {'Test::More'  =>  0}, # e.g., Module::Name => 1.1
     ABSTRACT_FROM     => 'lib/POE/Filter/PPPHDLC.pm', # retrieve abstract from module
-    AUTHOR            => 'Benjamin Smith <bsmith@cpan.org>',
+    AUTHOR            => 'Benjamin Smith <bsmith@cabbage.org.uk>',
 );

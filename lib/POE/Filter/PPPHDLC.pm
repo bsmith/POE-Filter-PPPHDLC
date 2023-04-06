@@ -154,7 +154,7 @@ RFC1662.
 
 =head1 AUTHOR
 
-Benjamin Smith, E<lt>bsmith@cpan.orgE<gt>
+Benjamin Smith E<lt>bsmith@cabbage.org.ukE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
