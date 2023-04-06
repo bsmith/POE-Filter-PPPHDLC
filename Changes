@@ -1,6 +1,6 @@
 Revision history for Perl extension POE::Filter::PPPHDLC.
 
-0.02  Unreleased
+0.02  Thu, 06 Apr 2023 22:11:02 +0100
 	- Changes to allow development
 	- Fixing RT#141718
 
