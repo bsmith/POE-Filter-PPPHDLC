@@ -35,3 +35,6 @@ inc/
 /*.zip
 
 extlib/
+
+MANIFEST
+POE-Filter-PPPHDLC-*/
