@@ -22,8 +22,7 @@ use Test::More tests => 5 + 10;
 
 # Regression test for https://rt.cpan.org/Public/Bug/Display.html?id=141718
 # The frame contains a \n and a /s was missed on a regex.
-TODO: {
-  local $TODO = "Unfixed bug RT#141718";
+{
   my $frame141718 =
     "\x9C\xF9\\\xC0\x15[\xAE\x8A" .
     "\r_\xC1\xA1\x1B\xAC~\x9D" .

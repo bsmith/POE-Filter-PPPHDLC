@@ -110,7 +110,10 @@ sub PPPGOODFCS16 () { 0xf0b8 } # Good final FCS value
 
 sub _pppfcs16 {
   my $fcs = shift;
-  $fcs = ($fcs >> 8) ^ $fcstab[($fcs ^ ord($1)) & 0xff] while $_[0] =~ m/(.)/g;
+  # BUGFIX: https://rt.cpan.org/Public/Bug/Display.html?id=141718
+  # As above, the /s is important.  If it is omitted, the . will not match \n
+  # and the checksum calculation will be wrong.
+  $fcs = ($fcs >> 8) ^ $fcstab[($fcs ^ ord($1)) & 0xff] while $_[0] =~ m/(.)/sg;
   return $fcs & 0xffff;
 }
 
